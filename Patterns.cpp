@@ -275,7 +275,42 @@ void pattern16(int n)
     }
 }
 
+void pattern17(int n)
+{   
+    for(int i=0;i<n;i++)
+    {   
+        char ch = 'A'+i;
+        for(int j =0;j<=i;j++)
+        {
+            cout<<ch<<" ";
+        }
+        cout<<endl;
+    }
+}
 
+void pattern18(int n)
+{   
+  for (int i = 1; i <= n; i++) {
+        // Print spaces to center-align the row
+        for (int j = 1; j <= n - i; j++) {
+            std::cout << " ";
+        }
+
+        // Print characters in ascending order
+        for (int j = 1; j <= i; j++) {
+            char ch = 'A' + j - 1;
+            std::cout << ch;
+        }
+
+        // Print characters in descending order (excluding the first character)
+        for (int j = i - 1; j >= 1; j--) {
+            char ch = 'A' + j - 1;
+            std::cout << ch;
+        }
+
+        std::cout << std::endl;
+    }
+}
 
 int main()
 {   int n;
@@ -312,6 +347,9 @@ int main()
     pattern15(n);
     cout<<endl;
     pattern16(n);
-            
+    cout<<endl;
+    pattern17(n);
+    cout<<endl;
+    pattern18(n); 
     return 0;
 }
