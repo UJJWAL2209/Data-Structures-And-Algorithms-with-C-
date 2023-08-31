@@ -246,6 +246,7 @@ void pattern14(int n)
         {
             cout<<nums;
             nums = nums+1;
+
         }
         cout<<endl;
     }
